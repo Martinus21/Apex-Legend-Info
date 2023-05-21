@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Apex";
+    src: url("./assets/font/Apex-Regular.ttf") format("opentype");
+}
+@font-face {
+    font-family: "ApexLight";
+    src: url("./assets/font/Apex-Light.ttf") format("opentype");
+}
+@font-face {
+    font-family: "ApexExLight";
+    src: url("./assets/font/Apex-ExtraLight.ttf") format("opentype");
+}
+@font-face {
+    font-family: "ApexBold";
+    src: url("./assets/font/Apex-Bold.ttf") format("opentype");
+}
+@font-face {
+    font-family: "ApexExBold";
+    src: url("./assets/font/Apex-ExtraBold.ttf") format("opentype");
+}
+
+body {
+    font-family: 'Apex';
+    font-weight:normal;
+    font-style:normal;
+    letter-spacing: 1px;
+}
+
+/* BANNER */
+.banner-apex {
+    background-image: url("./assets/images/background-Thumbnail.jpg");
+    height: 380px;
+    background-size: contain;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.banner-apex h1 {
+    font-size: 40px;
+    font-family: 'ApexExBold';
+    margin-bottom: 4vh;
+}
+/* END BANNER */
+
+/* CATEGORY */
+.container-category {
+    text-align: center;
+    background: #161616;
+}
+.container-category .btn-apex {
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 12px 18px;
+    border-bottom: 3px solid transparent;
+    color: white;
+    letter-spacing: 1px;
+}
+.container-category .btn-apex.active {
+    outline: none;
+    border: none;
+    background: #000000;
+    padding: 12px 18px;
+    border-bottom: 3px solid red;
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* CONTENT */
+.search-apex {
+    box-shadow: none;
+    border: 1px solid red;
+    background: #272727;
+    border-radius: 0;
+    color: red;
+}
+.search-apex::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+}
+.search-apex:focus {
+    box-shadow: none;
+    border: 1px solid red;
+    background: #161616b5;
+    border-radius: 0;
+    color: red !important;
+}
+.btn-searchApex {
+    border: 1px solid red;
+    background: #272727;
+    border-radius: 0;
+    color: red;
+    cursor: pointer;
+}
+.container-content {
+    background-image: url("./assets/images/background-Page.jpg");
+    min-height: 100vh;
+}
+.card-apexThumb {
+    border: none;
+    background: transparent;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.card-apexThumb .card-apexText {
+    text-align: center;
+    margin-top: 16px;
+}
+.card-apexThumb .card-apexImg {
+    background-image: url("./assets/images/background-Card.jpg");
+    border-radius: 2px 2px 0 0;
+    border-bottom: 4px solid red;
+}
+/* END CONTENT */
+
+.hiddenPopupBody {
+    overflow: hidden;
+}
+.popupCustoms {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#popupID {
+    background-image: url("./assets/images/background-Popup.jpg");
+    background-size: cover;
+    border: 4px solid #161616;
+    overflow-y: scroll;
+    height: 80%;
+    border-radius: 4px;
+    padding: 20px;
+    width: 80%;
+}
+.card-ability {
+    background-color: #161616;
+    border-radius: 6px;
+}
+.btn-popup {
+    border: 3px solid #161616;
+    background: red;
+}
+.btn-popupEdit {
+    border: 3px solid #161616;
+    background: rgb(232, 205, 0);
+}
